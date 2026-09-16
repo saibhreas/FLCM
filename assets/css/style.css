@@ -1,0 +1,136 @@
+:root {
+  --color-primary: #789c94;
+  --color-primary-dark: #3d4f4b;
+  --color-primary-mid: #9bc9bf;
+  --color-neutral-900: #aed8c3;
+  --bg-glass: rgba(255, 255, 255, 0.75);
+  --color-darktext: #070a09;
+
+  --color-secondary-dark: #98a390 --bg-greenglass: rgba(81, 94, 77, 0.25);
+  --bg-greenerglass: rgba(183, 189, 168, 0.9);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(24, 36, 27, 0.941);
+  font-family: Montserat, Arial, sans-serif;
+  line-height: 1.6;
+  color: rgb(238, 255, 233)
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  max-height: 150px;
+  border-bottom: 5px solid #060606;
+
+  box-shadow:
+    0 8px 32px 0 rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);
+  padding: 1rem 2rem;
+  
+  border-radius: 8px;
+  backdrop-filter: blur(2px);
+  border: 2px solid;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  margin-left: 1.5rem;
+  border-radius: 50%;
+}
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+/* Start of main  */
+main {
+
+
+  background-image: url("../img/bckg1.png");
+  .img {
+    opacity: 0.8;
+    width: 100%;
+
+  }
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+aside {
+  flex: 1;
+  max-width: 100px;
+  background-color: rgba(24, 36, 27, 0.5);
+  padding-right: 15px;
+  text-align: left;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(24, 36, 27, 0..7);
+  color: #fff;
+  margin-top: auto;
+}
+
+.products {
+  flex: 5;
+
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+/* Added rotation, box-shadow, */
+.card {
+background-color: rgba(24, 36, 27, 0.6);
+  border-style: solid;
+  border-width: 1px;
+  border-radius:2px;
+  padding: 15px;
+  flex: 0 0.5 200px;
+  /*transform: rotate(8deg); */
+  box-shadow:8px 8px 3px #aaaaaa;
+  margin: 20px;
+}
+
+/* Added border-radius to match the card */
+.card header {
+  border-radius: 15px 15px 0px 0px;
+  padding: 15px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 3px ;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}
