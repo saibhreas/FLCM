@@ -64,7 +64,7 @@ body {
 
 /* Start of main  */
 main {
-  background-image: url("../img/heroBrickPatio.png");
+  background-image: url("../img/brikbyard3.png");
   .img {
     opacity: 0.9;
     width: 100%;
@@ -76,8 +76,9 @@ main {
 
 .salePitch {
   flex: 1;
+  margin: 10px;
   padding: 10px;
-  text-align: right;
+  text-align: left;
 
   font-size: 1.5rem;
   height: 500px;
