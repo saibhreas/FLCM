@@ -133,6 +133,7 @@ aside {
 
   background-size: cover;
   background-repeat: no-repeat;
+  height: auto;
 }
 
 .scnd-containers {
