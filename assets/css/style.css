@@ -31,11 +31,11 @@ body {
 
   max-height: 140px;
   border-bottom: 2px solid #060606;
-/*
+  /*
   box-shadow:
     0 8px 32px 0 rgba(0, 0, 0, 0.3),
     inset 0 1px 1px rgba(255, 255, 255, 0.8);  */
-  padding: 1rem 2rem;  
+  padding: 1rem 2rem;
 
   border-radius: 8px;
   backdrop-filter: blur(2px);
@@ -44,12 +44,10 @@ body {
 }
 
 .logo {
-
   width: 120px;
   border-radius: 5px;
 }
 .logo img {
- 
   width: 120px;
   height: auto;
   border-radius: 5px;
@@ -85,18 +83,20 @@ main {
   height: 500px;
 }
 @media (max-width: 860px) {
-  .salePitch h2, .salePitch h3, .salePitch br {
-    font-size: .8em;
+  .salePitch h2,
+  .salePitch h3,
+  .salePitch br {
+    font-size: 0.8em;
   }
 }
 @media (max-width: 400px) {
   .salePitch br {
-    font-size: .1em;
+    font-size: 0.1em;
   }
 }
 .services {
   width: 100%;
-  
+
   flex: 5;
   padding: 10px;
   margin-bottom: 20px;
@@ -116,18 +116,18 @@ aside {
   text-align: left;
 }
 .second-hero {
-  color:rgb(6, 6, 6);
+  color: rgb(6, 6, 6);
   max-width: 100%;
   min-height: 400px;
 
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;  /*allows children to wrap to next line*/
+  flex-wrap: wrap; /*allows children to wrap to next line*/
   gap: 10px;
 
   padding-left: 15px;
   text-align: left;
-  
+
   background-image: url("../img/CementPouring1.png");
   background-position: center;
 
@@ -141,38 +141,30 @@ aside {
 
   flex-direction: row;
   flex-wrap: wrap;
-  ul{
+  ul {
     padding-left: 2rem;
-
-
-}
-@media (max-width:768px) {
-  .second-hero 
-  {
-    flex-direction: column;
+  }
+  @media (max-width: 768px) {
+    .second-hero {
+      flex-direction: column;
+    }
+  }
+  #excavation,
+  #drainage,
+  #driveways,
+  #masonry {
+    margin-top: 1.5 rem;
+    padding-left: 50px;
+    width: 50%;
+    display: left;
+    align-items: center;
+  }
+  #driveways {
+    background-color: rgb(141, 222, 48);
   }
 }
-#excavation, #drainage, #driveways, #masonry {
-  margin-top: 1.5 rem;
-  padding-left: 50px;
-  width: 50%;
-  display: left;
-  align-items: center;
-
-
-
-}
-#driveways {
-
-  background-color: rgb(141, 222, 48);
- 
-
-}
-
-}
 #masonry {
-    background-color: rgb(96, 75, 212);
-
+  background-color: rgb(96, 75, 212);
 }
 
 footer {
@@ -205,7 +197,7 @@ footer {
   border-radius: 2px;
   padding: 5px;
   flex: 0 0.5 200px;
-  /*transform: rotate(8deg); */
+transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 4px 5px 3px #aaaaaa;
   margin: 40px;
 }
@@ -214,6 +206,9 @@ footer {
 .card header {
   border-radius: 15px 15px 0px 0px;
   padding: 10px;
+}
+.card:hover{
+  transform:translateX(-8px);
 }
 
 .card p {
