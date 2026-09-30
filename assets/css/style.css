@@ -20,7 +20,8 @@ body {
   background-color: rgba(24, 36, 27, 0.941);
   font-family: Montserat, Arial, sans-serif;
   line-height: 1.6;
-  color: rgb(238, 255, 233);
+  /*color: rgb(238, 255, 233);*/
+  color: #f3f5f6;
 }
 
 .header-container {
@@ -46,15 +47,17 @@ body {
 .logo {
   width: 120px;
   border-radius: 5px;
+
 }
+/*
 .logo img {
   width: 120px;
   height: auto;
   border-radius: 5px;
-}
+}*/
 .nav-menu {
   max-width: 400px;
-  justify-content: left;
+  justify-content: right;
   align-items: center;
   gap: 2rem;
 
